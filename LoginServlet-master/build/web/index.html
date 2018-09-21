@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">  
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="login form-group">
+                        <form action="/web/Login" method="post">
+                            <h2>Inicio de sesión</h2>
+                            <label>
+                                Usuario: 
+                                <input type="text" name="usuario" class="form-control" />
+                            </label>
+                            <label  >
+                                Contraseña: 
+                                <input type="text" name="contra" class="form-control" />
+                            </label>
+                            <input type="submit" value="Enviar" class="form-control btn btn-secondary" />
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="login form-group">
+                        <form action="/web/SignIn" method="post">
+                            <h2>Registro</h2>
+                            <label>
+                                Usuario: 
+                                <input type="text" name="usuario" class="form-control" />
+                            </label>
+                            <label  >
+                                Contraseña: 
+                                <input type="text" name="contra" class="form-control" />
+                            </label>
+                            <input type="submit" value="Enviar" class="form-control btn btn-secondary" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
